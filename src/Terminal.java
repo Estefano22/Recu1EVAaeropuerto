@@ -8,10 +8,10 @@ public class Terminal {
         try {
             semaphore2.acquire();
             System.out.println("El " +Aviones.getName()+ " comienza a descargar");
-            int descarga = (int) (Math.random()*(2000));
+            int descarga = (int) (Math.random()*(20000));
             Thread.sleep(descarga);
             System.out.println("El " + Aviones.getName() + " comienza a recargar");
-            int recarga = (int) (Math.random()*(2000));
+            int recarga = (int) (Math.random()*(20000));
             Thread.sleep(recarga);
             semaphore2.release();
 
